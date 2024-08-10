@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script defer src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</head>
+<body class="video-chat-page">
+    <header>
+        <h1>Heuro TV</h1>
+        <div class="header-icons">
+            <button id="cameraToggle" title="Trocar Câmera">🔄</button>
+            <button id="microphoneToggle" title="Mutar/Desmutar Microfone">🎙️</button>
+            <button id="onlineStatus" title="Ver Online">👤</button>
+        </div>
+    </header>
+    <div class="background-container">
+        <img src="{{ url_for('static', filename='images/Hero.png') }}" alt="Heuro TV Background" class="background-image">
+    </div>
+    <div class="video-container">
+        <video id="localVideo" class="video" autoplay muted playsinline></video>
+        <video id="remoteVideo" class="video" autoplay playsinline></video>
+    </div>
+    <div class="controls">
+        <button id="swapButton">Trocar</button>
+    </div>
+    <div class="online-status">
+        <span> Online:</span>
+        <i id="onlineCount">0</i>
+    </div>
+    <div class="chat-container">
+        <div id="chatMessages" class="chat-messages"></div>
+        <textarea id="chatInput" placeholder="Digite uma mensagem..."></textarea>
+        <button id="sendButton">Enviar</button>
+    </div>
+    <div class="music-controls">
+        <input type="file" id="musicFileInput" accept="audio/*">
+        <button id="playMusicButton">Reproduzir Música</button>
+        <audio id="localMusic" controls></audio>
+    </div>
+</body>
+</html>

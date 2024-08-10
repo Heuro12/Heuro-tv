@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+ <!-- Edit Profile Modal -->
+    <div id="editProfileModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>PERFIL</h2>
+            <form id="editProfileForm">
+                <label for="newProfilePic">New Profile Picture:</label>
+                <input type="file" id="newProfilePic" name="newProfilePic" accept="image/*"><br><br>
+                
+                <label for="newUsername">New Username:</label>
+                <input type="text" id="newUsername" name="newUsername"><br><br>
+                
+                <label for="newLocation">New Location:</label>
+                <input type="text" id="newLocation" name="newLocation"><br><br>
+                
+                <label for="newCountry">New Country:</label>
+                <input type="text" id="newCountry" name="newCountry"><br><br>
+                
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="path/to/profile.js"></script>
+</body>
+</html>

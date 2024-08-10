@@ -1,0 +1,244 @@
+/* GERAL */
+
+/*
+GERAL */
+body {
+    background-color: #6c6a6a;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* PÁGINA DE LOGIN */
+body.login-page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-container {
+    background-color: rgba(47, 49, 54, 0.8); /* Cor de fundo com transparência */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-icon {
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: #7289da;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #5b6eae;
+}
+
+.social-login {
+    margin-top: 20px;
+}
+
+.social-login button {
+    margin: 5px;
+}
+
+.footer-copy {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+/* PÁGINA DE REGISTRO */
+body.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2f3136;
+}
+
+.register-form {
+    background-color: #2f3136;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px 0;
+}
+
+button {
+    background-color: #7289da;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #5b6eae;
+}
+
+/* PÁGINA DE VÍDEO CHAT */
+body.video-chat-page {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2f3136;
+    color: #ffffff;
+}
+
+header {
+    width: 10%;
+    background-color: #2d2a32;
+    padding: 0px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 13px;
+    color: #2805e9;
+}
+
+.header-icons {
+    margin-top: 10px;
+}
+
+.header-icons button {
+    background-color: #8cda72;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.header-icons button:hover {
+    background-color: #5b6eae;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.video {
+    background-color: #5a6268;
+    border: 0px solid #f0f3fc;
+    border-radius: 2px;
+    width: 49%;
+    height: auto;
+    margin: 0 1px;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #7289da;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #5b6eae;
+}
+
+.chat-container {
+    text-align: center;
+    margin: 10px;
+}
+
+textarea {
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+#sendButton {
+    background-color: #4894fe;
+}
+
+#sendButton:hover {
+    background-color: #621bf9;
+}
+
+.online-status {
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+}

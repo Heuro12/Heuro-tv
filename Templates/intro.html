@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script> <!-- Adicione seu script JS aqui -->
+</head>
+<body class="intro-page">
+    <div class="header">
+        <h1>BEM VINDO ÀS REGRAS</h1>
+    </div>
+    <div class="background-container">
+        <img src="{{ url_for('static', filename='images/Hero.png') }}" alt="Heuro TV Background" class="background-image">
+    </div>
+    <div class="menu">
+       
+        </button>
+        <!-- Adiciona o ícone de configurações aqui -->
+        <button onclick="location.href='{{ url_for('profile') }}'" class="settings-button">
+            <img src="{{ url_for('static', filename='images/settings-icon.png') }}" alt="Configurações">
+        </button>
+    </div>
+    <p>Por favor, leia as regras antes de entrar no chat de vídeo:</p>
+    <ul>
+        <li><strong>RESPEITE OS OUTROS:</strong> SEJA EDUCADO E RESPEITOSO. COMPORTAMENTO OFENSIVO, ABUSIVO OU DISCRIMINATÓRIO NÃO É PERMITIDO.</li>
+        <li><strong>CONTEÚDO APROPRIADO:</strong> NÃO COMPARTILHE MATERIAL PORNOGRÁFICO, VIOLENTO OU PROTEGIDO POR DIREITOS AUTORAIS. O SITE É PARA INTERAÇÃO SOCIAL E DIVERSÃO.</li>
+        <li><strong>PRIVACIDADE:</strong> NÃO COMPARTILHE INFORMAÇÕES PESSOAIS SENSÍVEIS. RESPEITE A PRIVACIDADE DOS OUTROS E NÃO PEÇA DADOS PESSOAIS.</li>
+        <li><strong>MODERAÇÃO E DENÚNCIA:</strong> USE AS FERRAMENTAS DE DENÚNCIA PARA RELATAR COMPORTAMENTOS INADEQUADOS. NOSSA EQUIPE DE MODERAÇÃO REVISARÁ AS DENÚNCIAS E TOMARÁ AS MEDIDAS APROPRIADAS.</li>
+        <li><strong>SEGURANÇA:</strong> NÃO USE O SITE PARA ATIVIDADES ILEGAIS OU PREJUDICIAIS, INCLUINDO FRAUDE, PHISHING E HACKING.</li>
+        <li><strong>CONSENTIMENTO PARA GRAVAÇÃO:</strong> ESTEJA CIENTE DE QUE AS INTERAÇÕES PODEM SER GRAVADAS PARA FINS DE SEGURANÇA E MONITORAMENTO. AO USAR O SITE, VOCÊ CONCORDA COM ESTA POLÍTICA.</li>
+        <li><strong>SIGA AS REGRAS:</strong> SIGA TODAS AS DIRETRIZES E REGRAS DO SITE. VIOLAÇÃO DAS REGRAS PODE RESULTAR EM SUSPENSÃO OU BANIMENTO.</li>
+        <li><strong>USO RESPONSÁVEL:</strong> USE O SITE DE FORMA RESPONSÁVEL E CONSIDERE O IMPACTO DE SUAS AÇÕES SOBRE OUTROS USUÁRIOS.</li>
+        <li><strong>MUDANÇAS NAS REGRAS:</strong> AS REGRAS PODEM SER ATUALIZADAS PERIODICAMENTE. VERIFIQUE REGULARMENTE PARA ATUALIZAÇÕES E MUDANÇAS NAS POLÍTICAS DO SITE.</li>
+    </ul>
+    <button onclick="location.href='{{ url_for('video_chat') }}'">Entrar no Chat de Vídeo</button>
+    <footer class="footer">
+        <p>&copy; 2024 Heuro TV</p>
+    </footer>
+</body>
+</html>
